@@ -37,6 +37,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ApertureTargetOverlay \
     FrameworksTargetOverlay \
+    SettingsProviderTargetOverlay \
     SettingsTargetOverlay \
     SettingsTargetOverlayPsycheCN \
     SettingsTargetOverlayPsycheGL \
