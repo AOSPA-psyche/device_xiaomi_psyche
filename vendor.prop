@@ -44,6 +44,33 @@ ro.surface_flinger.set_idle_timer_ms=1500
 ro.surface_flinger.set_touch_timer_ms=200
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
 
+# DisplayFeature
+ro.vendor.histogram.enable=true
+ro.vendor.df.effect.conflict=1
+ro.vendor.fod.dimlayer.enable=true
+persist.vendor.df.extcolor.proc=0
+ro.vendor.colorpick_adjust=true
+ro.vendor.display.type=oled
+ro.vendor.xiaomi.bl.poll=true
+persist.vendor.dc_backlight.enable=false
+persist.vendor.fod.modified.dc_status=false
+ro.vendor.all_modes.colorpick_adjust=true
+ro.vendor.cabc.enable=false
+ro.vendor.bcbc.enable=true
+ro.vendor.dfps.enable=false
+persist.vendor.dfps.level=120
+persist.vendor.power.dfps.level=0
+ro.vendor.display.default_fps=120
+ro.vendor.soft_backlight.enable=false
+ro.vendor.gcp.enable=1
+ro.vendor.sre=1
+ro.vendor.hbm_backlight.enable=true
+ro.vendor.display.touch.idle.enable=true
+ro.vendor.video_box.version=2
+ro.vendor.localhbm.enable=true
+ro.vendor.fps.switch.thermal=true
+ro.vendor.fps.switch.default=true
+
 # Fingerprint
 persist.vendor.fingerprint.type=udfps_optical
 persist.vendor.fingerprint.sensor_location=540|2163|107
