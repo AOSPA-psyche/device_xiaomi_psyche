@@ -26,11 +26,14 @@ PRODUCT_PACKAGES += \
     libpiex_shim
 
 # Nfc
-PRODUCT_PACKAGES += PsycheNfc
+PRODUCT_PACKAGES += NfcTargetOverlay
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+PRODUCT_PACKAGES += \
+    ApertureTargetOverlay \
+    FrameworksTargetOverlay \
+    SettingsTargetOverlay \
+    SystemUITargetOverlay
 
 # Sensors
 PRODUCT_COPY_FILES += \
