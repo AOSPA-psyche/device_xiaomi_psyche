@@ -34,12 +34,14 @@ PRODUCT_PACKAGES += \
     DSPVolumeSynchronizer
 
 # Nfc
-PRODUCT_PACKAGES += PsycheNfc
+PRODUCT_PACKAGES += NfcTargetOverlay
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+PRODUCT_PACKAGES += \
+    ApertureTargetOverlay \
+    FrameworksTargetOverlay \
+    SettingsTargetOverlay \
+    SystemUITargetOverlay
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
@@ -54,7 +56,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-    TargetWifiOverlay
+    WifiTargetOverlay
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/psyche/psyche-vendor.mk)
