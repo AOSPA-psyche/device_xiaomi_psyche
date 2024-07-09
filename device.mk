@@ -7,6 +7,9 @@
 # A/B
 TARGET_IS_VAB := true
 
+# Fingerprint
+TARGET_HAS_UDFPS := true
+
 # Inherit from sm8250-common
 $(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
 
@@ -39,4 +42,4 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Inherit from vendor blobs
-$(call inherit-product, vendor/xiaomi/alioth/alioth-vendor.mk)
+$(call inherit-product, vendor/xiaomi/psyche/psyche-vendor.mk)

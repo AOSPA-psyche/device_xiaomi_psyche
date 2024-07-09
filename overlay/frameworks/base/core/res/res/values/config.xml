@@ -63,7 +63,7 @@
         description for how the constraint value is chosen. -->
     <integer-array name="config_ambientBrighteningThresholds">
         <item>2</item>
-        <item>5</item>
+        <item>8</item>
         <item>10</item>
         <item>30</item>
         <item>100</item>
@@ -120,66 +120,118 @@
         This array should have size one greater than the size of the config_autoBrightnessLevels
         array. The brightness values must be non-negative and non-decreasing. This must be
         overridden in platform specific overlays -->
-    <integer-array name="config_autoBrightnessDisplayValuesNits">
-        <item>5</item>
-        <item>5</item>
-        <item>5</item>
-        <item>17</item>
-        <item>24</item>
-        <item>31</item>
-        <item>34</item>
-        <item>46</item>
-        <item>59</item>
-        <item>76</item>
-        <item>81</item>
-        <item>82</item>
-        <item>82</item>
-        <item>82</item>
-        <item>83</item>
-        <item>83</item>
-        <item>83</item>
-        <item>84</item>
-        <item>84</item>
-        <item>85</item>
-        <item>85</item>
-        <item>85</item>
-        <item>85</item>
-        <item>86</item>
-        <item>86</item>
-        <item>87</item>
-        <item>89</item>
-        <item>90</item>
-        <item>91</item>
-        <item>93</item>
-        <item>94</item>
-        <item>96</item>
-        <item>97</item>
-        <item>99</item>
-        <item>100</item>
-        <item>101</item>
-        <item>104</item>
-        <item>105</item>
-        <item>106</item>
-        <item>108</item>
-        <item>109</item>
-        <item>111</item>
-        <item>112</item>
-        <item>114</item>
-        <item>116</item>
-        <item>137</item>
-        <item>157</item>
-        <item>180</item>
-        <item>205</item>
-        <item>226</item>
-        <item>257</item>
-        <item>280</item>
-        <item>295</item>
-        <item>369</item>
-        <item>434</item>
-        <item>500</item>
-        <item>500</item>
-        <item>500</item>
-    </integer-array>
+    <array name="config_autoBrightnessDisplayValuesNits">
+        <item>9.8</item>
+        <item>9.8</item>
+        <item>9.8</item>
+        <item>20.9</item>
+        <item>28.7</item>
+        <item>34.2</item>
+        <item>37.6</item>
+        <item>50.9</item>
+        <item>65.4</item>
+        <item>84.3</item>
+        <item>89.8</item>
+        <item>90.9</item>
+        <item>90.9</item>
+        <item>90.9</item>
+        <item>92.0</item>
+        <item>92.0</item>
+        <item>92.0</item>
+        <item>93.1</item>
+        <item>93.1</item>
+        <item>94.3</item>
+        <item>94.3</item>
+        <item>94.3</item>
+        <item>94.3</item>
+        <item>95.4</item>
+        <item>95.4</item>
+        <item>96.5</item>
+        <item>98.7</item>
+        <item>99.8</item>
+        <item>101.0</item>
+        <item>106.5</item>
+        <item>109.8</item>
+        <item>113.2</item>
+        <item>115.4</item>
+        <item>117.6</item>
+        <item>119.8</item>
+        <item>122.1</item>
+        <item>124.3</item>
+        <item>126.5</item>
+        <item>128.7</item>
+        <item>130.9</item>
+        <item>133.2</item>
+        <item>136.5</item>
+        <item>138.7</item>
+        <item>140.9</item>
+        <item>143.2</item>
+        <item>163.2</item>
+        <item>185.4</item>
+        <item>199.9</item>
+        <item>227.7</item>
+        <item>251.0</item>
+        <item>285.5</item>
+        <item>311.0</item>
+        <item>344.4</item>
+        <item>410.0</item>
+        <item>444.4</item>
+        <item>463.0</item>
+        <item>481.4</item>
+        <item>500.0</item>
+        <item>500.0</item>
+        <item>500.0</item>
+        <item>500.0</item>
+        <item>505.6</item>
+        <item>511.1</item>
+        <item>516.7</item>
+        <item>522.2</item>
+        <item>527.8</item>
+        <item>533.3</item>
+        <item>538.9</item>
+        <item>544.4</item>
+        <item>550.0</item>
+        <item>555.6</item>
+        <item>561.1</item>
+        <item>566.7</item>
+        <item>572.2</item>
+        <item>577.8</item>
+        <item>583.3</item>
+        <item>588.9</item>
+        <item>594.4</item>
+        <item>600.0</item>
+        <item>606.7</item>
+        <item>613.3</item>
+        <item>620.0</item>
+        <item>626.7</item>
+        <item>633.3</item>
+        <item>640.0</item>
+        <item>646.7</item>
+        <item>653.3</item>
+        <item>660.0</item>
+        <item>666.7</item>
+        <item>673.3</item>
+        <item>680.0</item>
+        <item>686.7</item>
+        <item>693.3</item>
+        <item>700.0</item>
+        <item>716.7</item>
+        <item>733.3</item>
+        <item>750.0</item>
+        <item>766.7</item>
+        <item>783.3</item>
+        <item>800.0</item>
+        <item>816.7</item>
+        <item>833.3</item>
+        <item>850.0</item>
+        <item>866.7</item>
+        <item>883.3</item>
+        <item>900.0</item>
+        <item>916.7</item>
+        <item>933.3</item>
+        <item>966.7</item>
+        <item>1000.0</item>
+    </array>
 
     <!-- Array of light sensor lux values to define our levels for auto backlight brightness support.
         The N entries of this array define N + 1 control points as follows:
@@ -255,6 +307,58 @@
         <item>3500</item>
         <item>4000</item>
         <item>4500</item>
+        <item>5000</item>
+        <item>5500</item>
+        <item>6000</item>
+        <item>6500</item>
+        <item>7000</item>
+        <item>7500</item>
+        <item>8000</item>
+        <item>8500</item>
+        <item>9000</item>
+        <item>9500</item>
+        <item>10000</item>
+        <item>10500</item>
+        <item>11000</item>
+        <item>11500</item>
+        <item>12000</item>
+        <item>12500</item>
+        <item>13000</item>
+        <item>13500</item>
+        <item>14000</item>
+        <item>14500</item>
+        <item>15000</item>
+        <item>16000</item>
+        <item>17000</item>
+        <item>18000</item>
+        <item>19000</item>
+        <item>20000</item>
+        <item>21000</item>
+        <item>22000</item>
+        <item>23000</item>
+        <item>24000</item>
+        <item>25000</item>
+        <item>26000</item>
+        <item>27000</item>
+        <item>28000</item>
+        <item>29000</item>
+        <item>30000</item>
+        <item>35000</item>
+        <item>40000</item>
+        <item>45000</item>
+        <item>50000</item>
+        <item>55000</item>
+        <item>60000</item>
+        <item>65000</item>
+        <item>70000</item>
+        <item>75000</item>
+        <item>80000</item>
+        <item>85000</item>
+        <item>90000</item>
+        <item>95000</item>
+        <item>100000</item>
+        <item>110000</item>
+        <item>120000</item>
     </integer-array>
 
     <!-- Array of hysteresis constraint values for darkening, represented as tenths of a
@@ -402,15 +506,28 @@
     <integer name="config_autoBrightnessDarkeningLightDebounce">1000</integer>
 
     <!-- Maximum screen brightness allowed by the power manager.
-        The user is forbidden from setting the brightness above this level. -->
-    <integer name="config_screenBrightnessSettingMaximum">255</integer>
+        The user is forbidden from setting the brightness above this level -->
+    <item name="config_screenBrightnessSettingMaximumFloat" format="float" type="dimen">1.0</item>
 
-    <!-- Minimum screen brightness setting allowed by the power manager.
+    <!-- Minimum screen brightness setting allowed by power manager.
         The user is forbidden from setting the brightness below this level. -->
-    <integer name="config_screenBrightnessSettingMinimum">2</integer>
+    <item name="config_screenBrightnessSettingMinimumFloat" format="float" type="dimen">0.001709819</item>
+
+    <!-- Default screen brightness setting
+        Must be in the range specified by minimum and maximum. -->
+    <item name="config_screenBrightnessSettingDefaultFloat" format="float" type="dimen">0.074743524</item>
 
     <!-- Minimum screen brightness allowed by the power manager. -->
-    <integer name="config_screenBrightnessDim">6</integer>
+    <integer name="config_screenBrightnessDim">16</integer>
+
+    <!-- Screen brightness when dozing. -->
+    <integer name="config_screenBrightnessDoze">17</integer>
+
+    <!-- Fast brightness animation ramp rate in brightness units per second-->
+    <integer translatable="false" name="config_brightness_ramp_rate_fast">2466</integer>
+
+    <!-- Slow brightness animation ramp rate in brightness units per second-->
+    <integer translatable="false" name="config_brightness_ramp_rate_slow">1973</integer>
 
     <!-- The bounding path of the cutout region of the main built-in display.
          Must either be empty if there is no cutout region, or a string that is parsable by
@@ -429,13 +546,7 @@
                 <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z @dp</string>
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
-    <string translatable="false" name="config_mainBuiltInDisplayCutout">
-        M 514,52
-        a 20,20 0 1 0 52,0 
-        a 20,20 0 1 0 -52,0
-        Z
-        @left
-    </string>
+    <string translatable="false" name="config_mainBuiltInDisplayCutout">M -30,55 M 30,55 A 30,30 0 1,0 -30,55 A 30,30 0 1,0 30,55 Z</string>
 
     <!-- Like config_mainBuiltInDisplayCutout, but this path is used to report the
          one single bounding rect per device edge to the app via
@@ -443,14 +554,7 @@
          appearance of the cutout as much as possible, and may be smaller than
          config_mainBuiltInDisplayCutout
          -->
-    <string translatable="false" name="config_mainBuiltInDisplayCutoutRectApproximation">
-        M 493.5,0
-        h 95
-        v 95
-        h -95
-        Z
-        @left
-    </string>
+    <string translatable="false" name="config_mainBuiltInDisplayCutoutRectApproximation">M 0,0 H -30 V 104 H 30 V 0 H 0 Z</string>
 
     <!-- Whether the display cutout region of the main built-in display should be forced to
         black in software (to avoid aliasing or emulate a cutout that is not physically existent).
@@ -459,21 +563,4 @@
 
     <!-- If true, the display will be shifted around in ambient mode. -->
     <bool name="config_enableBurnInProtection">true</bool>
-
-    <!-- Indicates whether device has a power button fingerprint sensor. -->
-    <bool name="config_is_powerbutton_fps" translatable="false">true</bool>
-
-    <!-- An array of arrays of side fingerprint sensor properties relative to each display.
-         Note: this value is temporary and is expected to be queried directly
-         from the HAL in the future. -->
-    <array name="config_sfps_sensor_props" translatable="false">
-        <item>@array/config_sfps_sensor_props_0</item>
-    </array>
-
-    <array name="config_sfps_sensor_props_0" translatable="false">
-        <item>local:4630946736638489729</item>
-        <item>1080</item>
-        <item>965</item>
-        <item>115</item>
-    </array>
 </resources>
