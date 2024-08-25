@@ -50,6 +50,10 @@ PRODUCT_PACKAGES += \
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    init.device.rc
+
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
@@ -65,6 +69,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     NoCutoutOverlay \
     AvoidAppsInCutoutOverlay
+
+# Thermal Config
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/thermal/,$(TARGET_COPY_OUT_VENDOR)/etc/thermal_custom)
 
 # WiFi
 PRODUCT_PACKAGES += \

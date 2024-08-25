@@ -1,0 +1,10 @@
+# Custom Thermal
+on boot && property:persist.customthermal.enable=true
+    copy /vendor/etc/thermal_custom/thermal-normal.conf /data/vendor/thermal/config/thermal-normal.conf
+    copy /vendor/etc/thermal_custom/thermal-per-normal.conf /data/vendor/thermal/config/thermal-per-normal.conf
+    copy /vendor/etc/thermal_custom/thermal-tgame.conf /data/vendor/thermal/config/thermal-tgame.conf
+
+on boot && property:persist.customthermal.enable=false
+    rm /data/vendor/thermal/config/thermal-normal.conf
+    rm /data/vendor/thermal/config/thermal-per-normal.conf
+    rm /data/vendor/thermal/config/thermal-tgame.conf
