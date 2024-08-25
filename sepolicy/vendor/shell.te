@@ -1,0 +1,2 @@
+# Custom Thermal
+set_prop(shell, exported_system_prop)
