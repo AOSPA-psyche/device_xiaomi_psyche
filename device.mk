@@ -41,6 +41,8 @@ PRODUCT_PACKAGES += \
     ApertureTargetOverlay \
     FrameworksTargetOverlay \
     SettingsTargetOverlay \
+    SettingsTargetOverlayPsycheCN \
+    SettingsTargetOverlayPsycheGL \
     SystemUITargetOverlay
 
 # Shipping API level
