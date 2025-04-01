@@ -36,10 +36,6 @@ TARGET_USES_MIUI_DOLBY := true
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml
 
-# DSP Volume Synchronizer
-PRODUCT_PACKAGES += \
-    DSPVolumeSynchronizer
-
 # Overlays
 PRODUCT_PACKAGES += \
     ApertureTargetOverlay \
