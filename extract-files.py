@@ -41,6 +41,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so': blob_fixup()
         .binary_regex_replace(b'\x9A\x0A\x00\x94', b'\x1F\x20\x03\xD5'),
     (
+        'system/lib/libdovi_omx.so',
+        'system/lib64/libdovi_omx.so',
         'vendor/lib/libstagefright_soft_ac4dec.so',
         'vendor/lib/libstagefright_soft_ddpdec.so',
         'vendor/lib/libstagefrightdolby.so',
