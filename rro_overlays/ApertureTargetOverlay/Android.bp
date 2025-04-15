@@ -1,5 +1,0 @@
-runtime_resource_overlay {
-    name: "ApertureTargetOverlay",
-    resource_dirs: ["res"],
-    vendor: true,
-}

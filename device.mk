@@ -42,7 +42,6 @@ PRODUCT_PACKAGES += NfcTargetOverlay
 
 # Overlays
 PRODUCT_PACKAGES += \
-    ApertureTargetOverlay \
     FrameworksTargetOverlay \
     SettingsProviderTargetOverlay \
     SettingsTargetOverlay \
