@@ -28,7 +28,7 @@ static const variant_info_t psyche_info = {
     .hwc_value = "",
     .sku_value = "",
 
-    .mod_device = "psyche",
+    .mod_device = "psyche_global",
     .name = "psyche",
     .brand = "Xiaomi",
     .device = "psyche",
