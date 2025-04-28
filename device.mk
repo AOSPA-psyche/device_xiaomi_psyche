@@ -37,6 +37,9 @@ PRODUCT_COPY_FILES += \
 # Nfc
 PRODUCT_PACKAGES += NfcTargetOverlay
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
+
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksTargetOverlay \
