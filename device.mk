@@ -7,6 +7,9 @@
 # Fingerprint
 TARGET_HAS_UDFPS := true
 
+# Private Build Flag
+IS_PRIVATE_BUILD := false
+
 # Inherit from sm8250-common
 $(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
 
@@ -37,8 +40,13 @@ PRODUCT_COPY_FILES += \
 # Nfc
 PRODUCT_PACKAGES += NfcTargetOverlay
 
+ifeq ($(IS_PRIVATE_BUILD),true)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/nfc/libnfc-nxp-emulator.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
+else
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
+endif
 
 # Overlays
 PRODUCT_PACKAGES += \
