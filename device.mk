@@ -38,6 +38,9 @@ TARGET_USES_MIUI_DOLBY := true
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml
 
+# Init
+$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_xiaomi_psyche)
+
 # Overlays
 PRODUCT_PACKAGES += \
     ApertureTargetOverlay \
