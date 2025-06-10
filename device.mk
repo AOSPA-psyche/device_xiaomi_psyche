@@ -34,6 +34,9 @@ $(call inherit-product-if-exists, device/xiaomi/camera-psyche/miuicamera.mk)
 # Nfc
 PRODUCT_PACKAGES += NfcTargetOverlay
 
+# Init
+$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_xiaomi_psyche)
+
 # Overlays
 PRODUCT_PACKAGES += \
     ApertureTargetOverlay \
