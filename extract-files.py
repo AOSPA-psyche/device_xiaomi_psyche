@@ -50,6 +50,10 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libstagefrightdolby.so',
     ): blob_fixup()
         .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
+    'vendor/lib/libaudioroute_ext.so': blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
+    'vendor/lib/hw/audio.primary.kona.so': blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
 }  # fmt: skip
 
 namespace_imports = [
