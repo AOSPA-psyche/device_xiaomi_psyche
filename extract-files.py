@@ -32,6 +32,10 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('remote_handle_open')
         .clear_symbol_version('remote_register_buf')
         .clear_symbol_version('remote_register_buf_attr'),
+    'vendor/lib/libaudioroute_ext.so': blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
+    'vendor/lib/hw/audio.primary.kona.so': blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
     'vendor/lib64/libarcsoft_super_night_raw.so' : blob_fixup()
         .clear_symbol_version('rpcmem_alloc')
         .clear_symbol_version('rpcmem_free')
