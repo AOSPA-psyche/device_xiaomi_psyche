@@ -71,6 +71,7 @@ ro.vendor.fps.switch.default=true
 # Fingerprint
 persist.vendor.fingerprint.type=udfps_optical
 persist.vendor.fingerprint.sensor_location=540|2163|107
+persist.vendor.fingerprint.udfps.display_touch=true
 persist.vendor.fingerprint.udfps.control_illumination=true
 
 # TouchFeature
