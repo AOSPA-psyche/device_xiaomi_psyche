@@ -21,6 +21,8 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('.*seclabel u:r:batterysecret:s0\n', ''),
     'vendor/lib64/camera/components/com.mi.node.watermark.so': blob_fixup()
         .add_needed('libpiex_shim.so'),
+    'vendor/lib64/camera/components/com.vidhance.node.eis.so': blob_fixup()
+        .replace_needed('libui.so', 'libui-v34.so'),
     (
         'vendor/lib64/libMIAIHDRhvx_interface.so',
         'vendor/lib64/libarcsoft_hdrplus_hvx_stub.so',
