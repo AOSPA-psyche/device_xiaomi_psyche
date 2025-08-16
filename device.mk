@@ -47,6 +47,10 @@ PRODUCT_PACKAGES += \
     SettingsTargetOverlayPsycheGL \
     SystemUITargetOverlay
 
+# DerpFest-AOSP
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-derp
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
