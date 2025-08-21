@@ -18,11 +18,11 @@ PRODUCT_NAME := lineage_psyche
 PRODUCT_DEVICE := psyche
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := 2112123AG
+PRODUCT_MODEL := 2112123AC
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="psyche_global-user 13 TKQ1.221114.001 V816.0.8.0.TLDMIXM release-keys" \
-    BuildFingerprint=Xiaomi/psyche_global/psyche:13/TKQ1.221114.001/V816.0.8.0.TLDMIXM:user/release-keys \
-    BuildFlavor=psyche_global-user
+    BuildDesc="psyche-user 13 TKQ1.221114.001 V816.0.10.0.TLDCNXM release-keys" \
+    BuildFingerprint=Xiaomi/psyche/psyche:13/TKQ1.221114.001/V816.0.10.0.TLDCNXM:user/release-keys \
+    BuildFlavor=psyche-user
