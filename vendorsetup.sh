@@ -26,6 +26,10 @@ git clone https://github.com/MistOS-psyche/vendor_xiaomi_sm8250-common.git -b ao
 echo "Cloning MiuiCamera repository..."
 git clone https://gitlab.com/Verevka/vendor_xiaomi_camera.git -b aosp-16 vendor/xiaomi/camera
 
+# Clone the psyche firmware repository
+echo "Cloning Firmware repository..."
+git clone https://gitlab.com/Verevka/proprietary_vendor_xiaomi_psyche-firmware.git vendor/xiaomi/psyche-firmware
+
 echo "Setup complete. Repositories are ready."
 
 echo "Completed, proceeding to lunch"
