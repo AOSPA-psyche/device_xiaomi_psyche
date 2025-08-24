@@ -30,6 +30,11 @@ git clone https://gitlab.com/Verevka/vendor_xiaomi_camera.git -b aosp-16 vendor/
 echo "Cloning Firmware repository..."
 git clone https://gitlab.com/Verevka/proprietary_vendor_xiaomi_psyche-firmware.git vendor/xiaomi/psyche-firmware
 
+# Clone the wfd source
+echo "Cloning wfd repository..."
+git clone https://github.com/MistOS-psyche/device_qcom_wfd.git device/qcom/wfd
+git clone https://github.com/MistOS-psyche/vendor_qcom_wfd.git vendor/qcom/wfd
+
 echo "Setup complete. Repositories are ready."
 
 echo "Completed, proceeding to lunch"
