@@ -12,7 +12,7 @@ git clone https://github.com/crdroidandroid/android_hardware_xiaomi.git -b 16.0 
 
 # Clone the kernel source
 echo "Cloning kernel repository..."
-git clone --recurse-submodules https://github.com/MistOS-psyche/kernel_xiaomi_sm8250.git -b aosp-16 kernel/xiaomi/sm8250
+git clone https://github.com/MistOS-psyche/kernel_xiaomi_sm8250.git -b magictime-psyche kernel/xiaomi/sm8250
 
 # Clone the vendor device source
 echo "Cloning vendor device repository..."

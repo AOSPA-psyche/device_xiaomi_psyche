@@ -19,7 +19,7 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 include vendor/xiaomi/psyche-firmware/BoardConfigVendor.mk
 
 # Kernel
-TARGET_KERNEL_CONFIG := psyche_defconfig
+TARGET_KERNEL_CONFIG += vendor/xiaomi/psyche.config
 
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := psyche
