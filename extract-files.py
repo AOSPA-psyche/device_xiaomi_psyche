@@ -23,6 +23,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libpiex_shim.so'),
     'vendor/lib64/camera/components/com.vidhance.node.eis.so': blob_fixup()
         .replace_needed('libui.so', 'libui-v34.so'),
+    'vendor/lib64/camera/components/com.xiaomi.node.tracker.so': blob_fixup()
+        .replace_needed('libui.so', 'libui-v34.so'),
     (
         'vendor/lib64/libMIAIHDRhvx_interface.so',
         'vendor/lib64/libarcsoft_hdrplus_hvx_stub.so',
