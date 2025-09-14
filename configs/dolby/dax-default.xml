@@ -333,7 +333,7 @@
         <dialog-enhancer-amount value="4"/>
         <dialog-enhancer-ducking value="0"/>
         <mi-virtualizer-binaural-steering-enable value="false"/>
-        <peak-value value="241"/>
+        <peak-value value="256"/>
         <surround-decoder-enable value="true"/>
         <surround-boost value="0"/>
         <volmax-boost value="22"/>
@@ -432,7 +432,7 @@
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="0"/>
         <mi-virtualizer-binaural-steering-enable value="false"/>
-        <peak-value value="241"/>
+        <peak-value value="256"/>
         <surround-decoder-enable value="true"/>
         <surround-boost value="32"/>
         <volmax-boost value="0"/>
@@ -531,7 +531,7 @@
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="0"/>
         <mi-virtualizer-binaural-steering-enable value="false"/>
-        <peak-value value="240"/>
+        <peak-value value="256"/>
         <surround-decoder-enable value="true"/>
         <surround-boost value="0"/>
         <volmax-boost value="0"/>
@@ -630,7 +630,7 @@
         <dialog-enhancer-amount value="8"/>
         <dialog-enhancer-ducking value="0"/>
         <mi-virtualizer-binaural-steering-enable value="false"/>
-        <peak-value value="240"/>
+        <peak-value value="256"/>
         <surround-decoder-enable value="true"/>
         <surround-boost value="0"/>
         <volmax-boost value="32"/>
@@ -1125,7 +1125,7 @@
         <dialog-enhancer-amount value="9"/>
         <dialog-enhancer-ducking value="0"/>
         <mi-virtualizer-binaural-steering-enable value="false"/>
-        <peak-value value="240"/>
+        <peak-value value="256"/>
         <surround-decoder-enable value="true"/>
         <surround-boost value="0"/>
         <volmax-boost value="29"/>
