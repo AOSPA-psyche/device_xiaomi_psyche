@@ -54,6 +54,10 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
     'vendor/lib/hw/audio.primary.kona.so': blob_fixup()
         .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
+    (
+        'vendor/lib64/camera/components/com.vidhance.node.eis.so',
+        'vendor/lib64/camera/components/com.xiaomi.node.tracker.so',
+    ): blob_fixup().replace_needed('libui.so', 'libui-v34.so'),
 }  # fmt: skip
 
 namespace_imports = [
