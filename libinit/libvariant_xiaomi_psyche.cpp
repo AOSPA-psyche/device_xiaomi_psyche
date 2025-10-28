@@ -1,50 +1,44 @@
 /*
- * Copyright (C) 2021 The LineageOS Project
+ * Copyright (C) 2021-2025 The LineageOS Project
  *
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#include <libinit_variant.h>
+#include <libvariant.h>
 
-#include "vendor_init.h"
-
-static const variant_info_t psyche_global_info = {
+static const variant_info psyche_global_info = {
     .hwc_value = "GLOBAL",
     .sku_value = "",
 
-    .mod_device = "psyche_global",
+    .cert = "2112123AG",
     .name = "psyche_global",
     .brand = "Xiaomi",
     .device = "psyche",
-    .marketname = "Xiaomi 12X",
-    .model = "2112123AG",
-    .cert = "2112123AG",
-    .build_fingerprint = "Xiaomi/psyche_global/psyche:13/TKQ1.221114.001/V816.0.8.0.TLDMIXM:user/release-keys",
     .flavor = "psyche_global-user",
+    .marketname = "Xiaomi 12X",
+    .mod_device = "psyche_global",
+    .model = "2112123AG",
+    .build_fingerprint = "Xiaomi/psyche_global/psyche:13/TKQ1.221114.001/V816.0.8.0.TLDMIXM:user/release-keys",
     .nfc = true,
 };
 
-static const variant_info_t psyche_info = {
+static const variant_info psyche_info = {
     .hwc_value = "",
     .sku_value = "",
 
-    .mod_device = "psyche_global",
+    .cert = "2112123AC",
     .name = "psyche",
     .brand = "Xiaomi",
     .device = "psyche",
-    .marketname = "Xiaomi 12X",
-    .model = "2112123AC",
-    .cert = "2112123AC",
-    .build_fingerprint = "Xiaomi/psyche/psyche:13/TKQ1.221114.001/V816.0.10.0.TLDCNXM:user/release-keys",
     .flavor = "psyche-user",
+    .marketname = "Xiaomi 12X",
+    .mod_device = "psyche_global",
+    .model = "2112123AC",
+    .build_fingerprint = "Xiaomi/psyche/psyche:13/TKQ1.221114.001/V816.0.10.0.TLDCNXM:user/release-keys",
     .nfc = true,
 };
 
-static const std::vector<variant_info_t> variants = {
+const std::vector<variant_info> variants = {
     psyche_global_info,
     psyche_info,
 };
-
-void vendor_load_properties() {
-    search_variant(variants);
-}
