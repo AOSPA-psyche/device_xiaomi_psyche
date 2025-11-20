@@ -15,6 +15,9 @@ TARGET_SCREEN_DENSITY := 440
 # Device VINTF
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
+# Firmware
+include vendor/xiaomi/psyche-firmware/BoardConfigVendor.mk
+
 # Kernel
 TARGET_KERNEL_CONFIG := psyche_defconfig
 
